@@ -1,0 +1,34 @@
+:root {
+    --white: #ffffff;
+    --grey: #e9ecef;
+    --grey2: #dee2e6;
+    --grey3: #ced4da;
+    --darkGrey: #adb5bd;
+    --black: #212529;
+    
+    --lightGreen: #cbf3f0;
+    --green: #2ec4b6;
+    --lightOrange: #ffbf69;
+    --orange: #ff9f1c;
+}
+
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    list-style-type: none;
+    height: 100%;
+}
+
+body {
+    display: grid;
+}
+
+#content {
+    min-width: 100%;
+    min-height: 120vh;
+
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
