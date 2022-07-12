@@ -5,17 +5,14 @@ function component() {
   content.id = 'content';
   
 
-  const header = document.createElement('div');
-  renderHeader(header, content);
-
-
-
-  
-
-  //Creates main
   const main = document.createElement('div');
   main.id = 'main';
+  
+  const header = document.createElement('div');
+  renderHeader(header, content, main);
   content.appendChild(main);
+
+
 
 
 
@@ -35,7 +32,7 @@ function component() {
 }
 
 
-function renderHeader(header, content) {
+function renderHeader(header, content, main) {
   header.id = 'header';
 
   
@@ -51,9 +48,11 @@ function renderHeader(header, content) {
   const tab2 = tab('2', 'Menu', navbar);
   const tab3 = tab('3', 'Contact', navbar);
 
+  tab1gen(main);
+  tab2gen(main);
+  tab3gen(main);
 
   //Add each tab function call here
-  // tab1.addEventListener('click', () => tab1gen());
   //tab2gen();
   //tab3gen();
 
@@ -73,13 +72,43 @@ const tab = (id, text, navbar) => {
   element.classList.add('tabs');
   element.innerHTML = text;
   navbar.appendChild(element);
-  element.addEventListener('click', () => tab1gen());
+
   return element;
 }
 
-function tab1gen() {
-  
+function tab1gen(main) {
+  let element = document.createElement('div');
+  element.id = 'aboutUs';
 
+  let el1 = document.createElement('div');
+  el1.id = 'ourMission';
+  el1.innerHTML = 'Our Mission';
+
+  let el2 = document.createElement('div');
+  el2.id = 'missionText';
+  el2.innerHTML = "Here at Pain Bakery, our goal is to provide decadent delicacies, as well as sub-lethal creations at your request, no questions asked. Fit for the occasion. Pain bakery. ";
+
+  element.appendChild(el1);
+  element.appendChild(el2);
+
+  main.appendChild(element);
+}
+
+function tab2gen(main) {
+  let element = document.createElement('div');
+  element.id = 'menu';
+  element.style.display = 'none';
+
+  element.innerHTML = 'zxcvasd';
+  main.appendChild(element);
+}
+
+function tab3gen(main) {
+  let element = document.createElement('div');
+  element.id = 'contact';
+  element.style.display = 'none';
+
+  main.appendChild(element);
 }
 
 document.body.appendChild(component());

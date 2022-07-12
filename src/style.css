@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    src: url('./Montserrat/static/Montserrat-ExtraLight.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('./Montserrat/static/Montserrat-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url('./Montserrat/static/Montserrat-Regular.ttf');
+  }
+
 :root {
     --white: #ffffff;
     --grey: #e9ecef;
@@ -12,23 +30,134 @@
     --orange: #ff9f1c;
 }
 
+
+
 * {
     margin: 0px 0px;
     padding: 0px 0px;
     list-style-type: none;
     height: 100%;
+
+    color: white;
+    letter-spacing: 1px;
+
+    
 }
 
-body {
-    display: grid;
-}
+
 
 #content {
     min-width: 100%;
-    min-height: 120vh;
-
+    min-height: 100%;
     background-image: url('./bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+    font-family: 'Montserrat';
+    
+    overflow: auto;
+    position: fixed;
 }
+
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        min-height: 200px;
+        max-height: 200px;
+        background-color:rgb(16,16,16, .4);
+        font-weight: 200;
+    }
+    
+        #name {
+            box-sizing: border-box;
+            height: 70%;
+            padding-top: 20px;
+            font-size: 4rem;
+            text-align: center;
+
+        }
+
+        #navbar {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            height: 30%;
+            width: 100%;
+            font-weight: 400;;
+        }
+
+            .tabs {
+                display: flex;
+                font-size: 1.5rem;
+                align-items: center;
+            }
+
+            
+
+
+
+
+    #main {
+        display: flex;
+        height: auto;
+    }
+
+        #aboutUs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(16,16,16, .4);
+            margin: 200px auto;
+            height: 515px;
+            gap: 20px;
+        }
+
+            #ourMission {
+                display: flex;
+                height: 200px;
+                font-size: 2rem;
+                font-weight: 600;
+                align-items: center;
+            }
+            #missionText {
+                font-weight: 400;
+                font-size: 1.4rem;
+                width: 924px;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                padding: 0px 100px;
+            }
+
+        #menu {
+            font-size: 2rem;
+            display: none;
+        }
+
+        #contact {
+            height: 200px;
+        }
+
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(16,16,16, .4);
+        min-height: 50px;
+        max-height: 50px;
+        width: 100%;
+        margin-top: auto;
+
+        font-size: 1.3rem;
+        font-weight: 400;
+
+
+    }
