@@ -1,13 +1,18 @@
 # restaurant-page
 
 
-TDL: Load bg img
-    Home pg : About us
-    Menu: Pain au chocolat, knuclke sandwich, rock hard baguette
-    Contact: 
+This sample bakery page was created to practice using Webpack and completely generate a webpage without hard-coding any html.
 
 
-    bg img pain : Nicholas doyle https://unsplash.com/photos/t7jTtJ9iyUE
+Reflection: I think this project was fairly straightforward except for getting Webpack 5 to work at times.
+The documentation for fonts is incorrect and the format('') actually prevented it from working. 
+I managed to fix it by random chance. I think tab2gen could've condensed, but putting the text values into the array then making a for loop didn't work. 
+
+
+
+
+
+    bg img credits: Nicholas doyle https://unsplash.com/photos/t7jTtJ9iyUE
 
 
 

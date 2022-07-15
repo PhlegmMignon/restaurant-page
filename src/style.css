@@ -4,47 +4,26 @@
     src: url('./Montserrat/static/Montserrat-ExtraLight.ttf');
   }
 
-  @font-face {
+@font-face {
     font-family: 'Montserrat';
     font-weight: 400;
     src: url('./Montserrat/static/Montserrat-Light.ttf');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Montserrat';
     font-weight: 600;
     src: url('./Montserrat/static/Montserrat-Regular.ttf');
-  }
-
-:root {
-    --white: #ffffff;
-    --grey: #e9ecef;
-    --grey2: #dee2e6;
-    --grey3: #ced4da;
-    --darkGrey: #adb5bd;
-    --black: #212529;
-    
-    --lightGreen: #cbf3f0;
-    --green: #2ec4b6;
-    --lightOrange: #ffbf69;
-    --orange: #ff9f1c;
 }
-
-
 
 * {
     margin: 0px 0px;
     padding: 0px 0px;
     list-style-type: none;
     height: 100%;
-
     color: white;
     letter-spacing: 1px;
-
-    
 }
-
-
 
 #content {
     min-width: 100%;
@@ -65,7 +44,6 @@
     position: fixed;
 }
 
-
     #header {
         display: flex;
         flex-direction: column;
@@ -81,7 +59,6 @@
             padding-top: 20px;
             font-size: 4rem;
             text-align: center;
-
         }
 
         #navbar {
@@ -98,11 +75,6 @@
                 font-size: 1.5rem;
                 align-items: center;
             }
-
-            
-
-
-
 
     #main {
         display: flex;
@@ -137,13 +109,68 @@
             }
 
         #menu {
+            background-color:rgb(16,16,16, .6);
             font-size: 2rem;
             display: none;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 50px 200px;
+            height: auto;
+            width: 924px;
+            margin: 100px auto;
+            gap: 80px;
         }
 
+            .items {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                height: auto;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .description {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .orBox {
+                display: flex;
+                align-items: center;
+                align-self: center;
+                gap: 3px;
+                font-size: 1rem;
+            }
+                .dash {
+                    width: 30px;
+                    height: .5px;
+                    background-color:  white;
+
+                }
+
+
+
         #contact {
-            height: 200px;
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+            background-color:rgb(16,16,16, .4);
+            width: 924px;
+            height: 335px;
+            justify-content: center;
+            align-items: center;
+            margin: 290px auto;
         }
+
+            #call, #address, #legal {
+                display: flex;
+                align-items: center;
+                align-self: flex-start;
+                height: 50px;
+                margin-left: 150px;
+                font-size: 1.3rem;
+            }
 
 
     #footer {
@@ -155,9 +182,13 @@
         max-height: 50px;
         width: 100%;
         margin-top: auto;
-
         font-size: 1.3rem;
         font-weight: 400;
-
-
     }
+
+        #mark, a {
+            width: 30px;
+            height: auto;
+            margin-left: 3px;
+            margin-top: 2px;
+        }
